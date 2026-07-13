@@ -80,7 +80,7 @@ export default function AboutPage() {
             </p>
             <div className="mt-4 rounded-xl bg-secondary p-4 text-center">
               <p className="text-sm text-muted-foreground">メールアドレス</p>
-              <p className="mt-1 font-display text-lg font-bold text-primary">info@tezuri-calc.example.com</p>
+              <p className="mt-1 font-display text-lg font-bold text-primary">Tisk.address@gmail.com</p>
             </div>
             <p className="mt-3 text-xs text-muted-foreground">
               ※ お返信には数日〜1週間程度かかる場合がございます。ご了承ください。
