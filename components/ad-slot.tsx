@@ -8,19 +8,22 @@ type AdSlotProps = {
   className?: string
 }
 
-const variantConfig: Record<NonNullable<AdSlotProps["variant"]>, { style: string; format: string; slot: string }> = {
+const variantConfig: Record<
+  NonNullable<AdSlotProps["variant"]>,
+  { style: React.CSSProperties; format: string; slot: string }
+> = {
   leaderboard: {
-    style: "display:inline-block;width:728px;height:90px",
+    style: { display: "inline-block", width: "728px", height: "90px" },
     format: "auto",
     slot: "1234567890",
   },
   infeed: {
-    style: "display:inline-block;width:100%;height:120px",
+    style: { display: "inline-block", width: "100%", height: "120px" },
     format: "fluid",
     slot: "1234567891",
   },
   square: {
-    style: "display:inline-block;width:300px;height:250px",
+    style: { display: "inline-block", width: "300px", height: "250px" },
     format: "auto",
     slot: "1234567892",
   },
@@ -38,13 +41,13 @@ export function AdSlot({ variant = "leaderboard", className }: AdSlotProps) {
 
   useEffect(() => {
     if (!ref.current) return
-    // @ts-expect-error adsbygoogle global
-    if (typeof window !== "undefined" && window.adsbygoogle) {
-      try {
+    try {
+      // @ts-expect-error adsbygoogle global
+      if (typeof window !== "undefined" && window.adsbygoogle) {
         ;(window.adsbygoogle as unknown[]).push({})
-      } catch {
-        // AdSense not loaded yet
       }
+    } catch {
+      // AdSense not loaded yet
     }
   }, [])
 
