@@ -165,6 +165,11 @@ export default function RootLayout({
     <html lang="ja" className={`${notoSansJP.variable} ${poppins.variable} bg-background`}>
       <head>
         <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5931540016126544"
+          crossOrigin="anonymous"
+        />
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
