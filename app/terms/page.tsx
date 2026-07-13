@@ -20,7 +20,7 @@ export default function TermsPage() {
           ]}
         />
         <h1 className="mt-6 font-display text-3xl font-bold text-foreground">利用規約</h1>
-        <p className="mt-2 text-sm text-muted-foreground">最終更新日: 2024年12月</p>
+        <p className="mt-2 text-sm text-muted-foreground">最終更新日: 2026年7月</p>
 
         <div className="mt-8 space-y-6 text-sm leading-relaxed text-muted-foreground">
           <section>

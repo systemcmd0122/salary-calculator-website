@@ -18,7 +18,7 @@ const infoItems = [
   {
     icon: Clock,
     title: "運営開始",
-    content: "2024年",
+    content: "2026年",
   },
   {
     icon: Shield,
